@@ -53,7 +53,8 @@ public class DataMiner {
     List<RevCommit> atomicCommits = new ArrayList<>();
     List<RevCommit> compositeCommits = new ArrayList<>();
     Pattern issuePattern =
-        Pattern.compile("#[0-9]+?\\s+"); // Other special format: jruby-XXX xstr-XXX storm-XXX
+        Pattern.compile("#[0-9]+?\\s+");
+    // Other special format: jruby-XXX xstr-XXX storm-XXX
     Pattern bulletPattern = Pattern.compile("\\*|-\\s+");
     try (Repository repository = gitService.openRepository(repoPath)) {
       // iterate commits from master:HEAD

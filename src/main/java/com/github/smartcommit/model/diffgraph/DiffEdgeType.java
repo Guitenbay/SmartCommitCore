@@ -28,7 +28,7 @@ public enum DiffEdgeType {
 
   Boolean fixed;
   String label;
-  Integer category; // category of the link, mainly for ablation study
+  Integer category; // category of the link, mainly for ablation study 消融研究（？）
 
   DiffEdgeType(Boolean fixed, String label) {
     this.fixed = fixed;
